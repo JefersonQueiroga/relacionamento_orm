@@ -7,7 +7,7 @@ class Curso(models.Model):
     def __str__(self):
         return self.nome
 
-#mudança
+#mudança teste
 class Campus(models.Model):
     nome = models.CharField(max_length=100)
     nome_cidade = models.CharField(max_length=100)
