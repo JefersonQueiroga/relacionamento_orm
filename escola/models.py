@@ -7,6 +7,7 @@ class Curso(models.Model):
     def __str__(self):
         return self.nome
 
+#mudança
 class Campus(models.Model):
     nome = models.CharField(max_length=100)
     nome_cidade = models.CharField(max_length=100)
@@ -28,3 +29,4 @@ class Aluno(models.Model):
     campus = models.ForeignKey(Campus,on_delete=models.CASCADE)    
     curso = models.ForeignKey(Curso,on_delete=models.CASCADE)
     disciplina = models.ManyToManyField(Disciplina)
+
