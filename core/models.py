@@ -18,6 +18,7 @@ class UUIDModel(models.Model):
 
 #teste
 class CreationTimestampedModel(models.Model):
+    #correção
     created_at = models.DateTimeField(
         _("Created at"), auto_now_add=True, editable=False
     )
