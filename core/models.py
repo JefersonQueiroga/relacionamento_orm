@@ -16,6 +16,7 @@ class UUIDModel(models.Model):
         abstract = True
 
 
+#teste
 class CreationTimestampedModel(models.Model):
     created_at = models.DateTimeField(
         _("Created at"), auto_now_add=True, editable=False
